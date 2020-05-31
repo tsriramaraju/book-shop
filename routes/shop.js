@@ -5,15 +5,16 @@ const controller = require("../controllers/shop");
 
 router.get("/", controller.getIndex);
 
-// router.get("/products", controller.getProducts);
+router.get("/products", controller.getProducts);
 
-// router.get("/products/:productId", controller.getProduct);
+router.get("/products/:productId", controller.getProduct);
 
-// router.get("/cart", controller.getCart);
+router.get("/cart", controller.getCart);
 
-// router.post("/cart", controller.postCart);
+router.post("/cart", controller.postCart);
 
-// router.post("/cart-delete-item", controller.postCartDeleteProduct);
+router.post("/cart-delete-item", controller.postCartDeleteProduct);
 
-// router.get("/orders", controller.getOrders);
+router.get("/orders", controller.getOrders);
+router.post("/create-order", controller.postAddOrder);
 module.exports = router;

@@ -29,11 +29,11 @@
                                 <div class="card__actions">
                                     
                                     <form action="/admin/edit-product" method="POST">
-                                        <input type="hidden" value="<%= product.id %>" name="productId">
+                                        <input type="hidden" value="<%= product._id %>" name="productId">
                                         <button class="btn" type="submit">Edit</button>
                                     </form>
                                     <form action="/admin/delete-product" method="POST">
-                                        <input type="hidden" value="<%= product.id %>" name="productId">
+                                        <input type="hidden" value="<%= product._id %>" name="productId">
                                         <button class="btn" type="submit">Delete</button>
                                     </form>
 
